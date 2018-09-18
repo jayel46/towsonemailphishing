@@ -1,0 +1,175 @@
+
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang='en' lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+
+
+<head>
+	<script type="text/javascript">
+		function toggle(id) {
+
+			var e = document.getElementById(id);
+		
+			if(e.style.display == 'none') {
+				e.style.display = 'block';
+			}
+			else {
+				e.style.display = 'none';
+			}
+		}
+		
+	</script>
+
+	<title>Towson University Authenticated Login</title>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	
+	<link rel="stylesheet" href="/towsonshib/css/towsontheme.css" type="text/css" />
+	<link rel="stylesheet" href="/towsonshib/css/shib_login.css" type="text/css" />
+
+</head>
+<body>
+
+<div id="t3rdp-header-body-wrap">
+
+	<div class="t3rdp-header-black-bar">
+		<div class="t3rdp-container t3rdp-clearfix">
+			<div class="t3rdp-tu-logo">
+				<a href="http://www.towson.edu">
+					<img  class="t3rdp-tu-logo-container" src="/towsonshib/images/towsonu-logo-horiz-rev.png" alt="Towson University" />
+				</a>
+			</div>
+			<!--
+			<div class="t3rdp-header-text ">
+				<span class="t3rdp-hide-back">
+				<a href="http://www.towson.edu">
+					<img src="/towsonshib/images/tuBack.gif" width="168" height="11" alt="Back to Towson University's home page" />
+				</a>
+				</span>
+			</div>
+			-->
+		</div>
+	</div>
+	<div class="t3rdp-header-gold-bar"></div>
+
+	<div  id="t3rdp-page"> 
+	
+		<div class="t3rdp-main-content"> 
+		<!-- CONTENT AREA -->
+
+		<!--
+		<div style='margin:0 auto;width:50%;border:1px solid red;text-align:center;'>
+		SAMPLE OF CENTERED CONTENT WITHIN a 50% CENTERED DIV
+		</div>
+		-->
+		
+		<div class="content" style="width:50%; margin: 0 auto;border:0px solid blue;" >
+			<h2 align="center" style="padding-bottom:20px;">Towson University Authenticated Login</h2>
+			<div class="column one" style="width:100%;border:0px solid green;">
+				
+				<form action="/idp/profile/SAML2/Redirect/SSO;jsessionid=0C1835490E45DFA0B16FD6958E32DC40?execution=e1s1" method="post" style="margin:0 auto;text-align:center;border:0px solid red;">
+
+							<p style='text-align:center;'><nobr>Use your Towson University NetID to log into</nobr></p><p style='margin-top:10px; text-align:center;'><strong>
+			
+							Webmail Powered by Google Login			
+						</strong></p>
+			
+															
+										<p style='text-align:center; font-family:Arial,Helvetica,sans-serif;font-style:italic;color:gray;'>Google Apps &#x28;Mail, Calendar, Drive&#x29; for TU Students</p>
+									
+																																							
+				<br/>
+
+
+
+								<div class="form-element-wrapper" style="text-align:left;">
+					<label for="username">Username</label>
+					<input class="form-element form-field" style="width:95%" id="username" name="j_username" type="text" value="">
+				</div>
+
+				<div class="form-element-wrapper" style="text-align:left;">
+					<label for="password">Password</label>
+					<input class="form-element form-field" style="width:95%" id="password" name="j_password" type="password" value="">
+				</div>
+
+																
+																				
+				
+								  <div class="form-element-wrapper">
+					<button class="form-element form-button" type="submit" name="_eventId_proceed"
+						onClick="this.childNodes[0].nodeValue='Logging in, please wait...'"
+						>Login</button>
+				  </div>
+								
+				<table style='border:0px;margin:0 auto;width:100%;padding-bottom:10px;'>
+				<tr><td align="left"><a href="http://www.towson.edu/resetpassword" target="_blank">Forgot Password</a></td><td align="right"><a href="http://www.towson.edu/accounts" target="_blank">Manage My NetID</a></td></tr>
+				</table>
+				
+												
+				<div style='padding-top:5px;'>
+					<p style="font-size: 10px;" align="center" ><b><a href="javascript:toggle('showTOC');">Terms and Conditions</a></b></p>
+
+					
+						<div id="showTOC" style="display:none; font-size: 10px; "><B>Notice:</B> Unauthorized access to this computer is in violation of Article 27.Sections 45A and 146 of the Annotated Code of Maryland. Towson University may monitor use of this system as permitted by state and federal law, including the Electronic Communications Privacy Act, 18 U.S.C. sections 2510 et seq. 
+						Unauthorized or improper use of this system may result in administrative disciplinary action and civil and criminal penalties.
+						By continuing to use this system you indicate your awareness of and consent to these terms and conditions of use.
+						</div>
+
+					
+					
+					<p style="font-size: 10px;padding-top:10px;" align="center" ><b><a href="javascript:toggle('showQAC');">Questions and/or Comments?</a></b></p>
+						<div id="showQAC" style="display:none; font-size: 10px; ">Please contact the Office of Technology Services Faculty/Staff Help Center 
+						or Student Computing Services by calling 410-704-5151, or by submitting a support request at 
+						<A HREF=https://techhelp.towson.edu>https://techhelp.towson.edu.</A>
+						
+						<br/>
+						<br/>
+						For departments who want to use Shibboleth for authentication, please visit the 
+						<a href="https://shib.towson.edu" target="_blank">Shibboleth Identity Provider FAQ</a>.
+						</div>
+						
+					</p>
+									
+				</div>
+
+								</form>
+
+				
+
+
+            
+			</div>
+			<!--
+			<div class="column two">
+				<ul class="list list-help">
+										<li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Forgot your password?</a></li>
+										<li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Need Help?</a></li>
+				</ul> HERE THERE BE TEXT
+			</div>   
+			
+			-->
+			<!-- END CONTENT AREA -->
+		</div>
+	</div>
+</div>
+
+<div id="t3rdp-footer">
+	<div class="t3rdp-footer-bar">
+		<div class="t3rdp-container t3rdp-clearfix">
+			<div class="t3rdp-tu-logo">
+				<a href="http://www.towson.edu">
+					<img class="t3rdp-tu-logo-container" src="/towsonshib/images/towsonu-logo-horiz-black.png" alt="Towson University" />
+				</a>
+			</div>
+			<div class="t3rdp-footer-text">
+				&#169;2017 | 8000 York Road | Towson, MD 21252 | <a class="t3rdp-phoneNumber" href="tel:+14107042000">410-704-2000</a><br/><span style='color:#ffcc00;'>shibidpprod1.towson.edu</span>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+</body>
+</html>
